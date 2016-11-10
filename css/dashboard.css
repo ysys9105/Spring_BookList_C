@@ -1,0 +1,143 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+    display: none;
+}
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #0f222f;
+        border-right: 1px solid #eee;
+    }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #18BC9C;
+}
+.nav-sidebar > .disactive > a,
+.nav-sidebar > .disactive > a:hover,
+.nav-sidebar > .disactive > a:focus {
+    color: #fff;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+.main .page-header {
+    margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.placeholders h4 {
+    margin-bottom: 0;
+}
+.placeholder {
+    margin-bottom: 20px;
+}
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+#detail {
+    background-color: #b9d2e7;
+}
+#bookimg{
+    width: 145px;
+}
+#ctitle{
+    width: 80%;
+}
+#ctext{
+    width: 80%;
+    height: 350px;
+}
+#pagenav{
+    text-align: center;
+    font-weight: 700;
+    background-color: #d4e7e7;
+    color: #0f222f;
+    !important;
+}
+#aboutsection {background:#fff;color:#18BC9C; !important}
+
+.btn-outline{color: #5c6bbc;font-size:20px;border:2px solid #5c6bbc;background:0 0;transition:all .3s ease-in-out;margin-top:15px}
+.btn-outline.active,.btn-outline:active,.btn-outline:focus,.btn-outline:hover{color:#fff;background: #5c6bbc;border:2px solid #5c6bbc}
+
+hr.star-light,hr.star-primary{padding:0;border:none;border-top:solid 5px;text-align:center;max-width:250px;margin:25px auto 30px}
+hr.star-light:after,hr.star-primary:after{content:"\f005";display:inline-block;position:relative;top:-.8em;font-size:2em;padding:0 .25em}
+.navbar-custom,header .intro-text .name{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase}hr.star-light{border-color:#18BC9C}
+hr.star-light:after{background-color:#fff;color:#18BC9C}hr.star-primary{border-color:#2C3E50}hr.star-primary:after{background-color:#18BC9C;color:#2C3E50}
+
+#mainspace{
+    padding: 100px;
+    margin: 50px auto;
+    border: solid #18BC9C;
+}
